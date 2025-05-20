@@ -1,0 +1,15 @@
+@import url(./ghost.css);
+@import url(./btn_header.css);
+@import url(./text_header.css);
+
+header {
+  width: 100%;
+  height: 16%;
+}
+@media (max-width:1270px){
+  header{
+    height: 10%;
+    display: flex;
+    flex-direction: row;      
+  }      
+}

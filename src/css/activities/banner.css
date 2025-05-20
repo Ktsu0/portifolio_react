@@ -1,0 +1,72 @@
+#nav_banner{
+    width: 100vw;
+    height: 50%;
+    margin: 8vh 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#banners{
+    width: 640%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transition: all 3s ease-in-out;
+}
+
+.banner{
+    width: 90vw;
+    height: 100%;
+
+    border-radius: 10vh;
+
+    margin: 0 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    animation: rgb 120s ease-in-out infinite; 
+     
+}
+
+.banner1{
+    background-image: url(./../../../assets/Img/pixel1.gif);
+}
+.banner2{
+    background-image: url(./../../../assets/Img/pixel2.gif);
+}
+.banner3{
+    background-image: url(./../../../assets/Img/pixel3.gif);
+}
+.banner4{
+    background-image: url(./../../../assets/Img/pixel4.gif);
+}
+.banner5{
+    background-image: url(./../../../assets/Img/pixel5.gif);
+}
+.banner6{
+    background-image: url(./../../../assets/Img/pixel6.gif);
+}
+
+.btn_banner{
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 100%;
+    border: none;
+    margin:0 0.5vw 0.7vw;
+    background-color: var(--white_shadow);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_banner:hover{
+    transform: scale(1.2);
+}
+
+#btn_banner_1{
+    transform: scale(1.2);
+}

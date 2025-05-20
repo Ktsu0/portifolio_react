@@ -1,0 +1,61 @@
+#logo_profession {
+    width: 50%;
+    height: 100%;
+  }
+  #programming-title {
+    flex-wrap: nowrap;
+    color: var(--white);
+    font-size: 4vh;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1.1;
+    height: 10vh;
+    gap: 0.2vh;
+  }
+  .letter {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(-100%);
+    transition: transform 1.5s ease, opacity 1s ease;
+  }
+  .letter.up {
+    transform: translateY(-30px);
+  }
+  .letter.down {
+    transform: translateY(30px);
+  }
+  .letter.enter {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .letter.exit-up {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  .letter.exit-down {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  @media (max-width:1270px){
+    #programming-title{
+        font-size: 3vh;
+    }
+  }
+  @media (max-width:900px){
+    
+    #programming-title{
+        font-size:2.5vh;
+    }
+  }
+  @media (max-width:480px){
+    #logo_profession{
+        width: 95%;
+    }
+    #programming-title{
+        font-size:2.4vh;
+    }
+  }

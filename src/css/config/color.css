@@ -1,0 +1,27 @@
+:root {
+    /* background body*/
+    --black: #1d1d1d;
+    --black_shadow: #ec070700;
+    --gray: #3c3c3c;
+    --light_gray: #4e4f51;
+  
+    /* Text Color*/
+    --white: aliceblue;
+    --white_shadow: rgba(240, 248, 255, 0.528);
+    --cyan: #64b4f6;
+    --light_cyan: #64b4f6ec;
+  
+    /*Btns*/
+    --green: #128c5b;
+    --pink: #d62976;
+  
+    /*Fonts config*/
+    --fontP: "Exo 2";
+    --fontS: "Alegreya Sans";
+  
+    /*Ghost*/
+    --green_ghost:#0e5f229d;
+    --strong_green:#0b2b20;
+    --gray_ghost:#dadddfa4;
+
+  }
