@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LogoProfession from "./LogoProfession";
-import MenuButton from "./MenuButton";
+import LogoProfession from "../../ui/header/LogoProfession";
+import MenuButton from "../../ui/header/MenuButton";
 import ButtonContainer from "./ButtonContainer";
 
 function Header() {

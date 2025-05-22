@@ -43,6 +43,7 @@ footer{
 } 
 .btn_footer:hover{
   background-color: var(--white_shadow);
+  .icon{font-size: 5.2vh;}
 }
 
 
@@ -54,7 +55,7 @@ footer{
 /* github*/
 .iconone:hover {
   color: var(--black);
-  transition-duration:0.5s;
+  transition-duration:0.7s;
   transform: scale(1.2); 
 }
 

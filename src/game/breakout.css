@@ -1,0 +1,22 @@
+.breakout-canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 43% 43% 39% 30% / 34% 45% 58% 47%;
+  background-color: var(--black);
+}
+
+
+#start_button {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.2rem;
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#start_button:hover {
+  transform: scale(1.2);
+}

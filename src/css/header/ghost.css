@@ -91,10 +91,10 @@
 #ghost.fade-out .particle {
   animation: disperse 1s forwards;
 }
-.ghost-fog {
+.ghost_fog {
   position: absolute;
-  width: 12rem;
-  height: 12rem;
+  width: 12vh;
+  height: 12vh;
   background: radial-gradient(circle, var(--green_ghost) 10%, transparent 70%);
   pointer-events: none;
   z-index: 0;
@@ -102,10 +102,9 @@
   left: 0;
   opacity: 0;
   animation: fogMove 8s ease-in-out infinite;
-  transition: opacity 1s ease;
   filter: blur(1.5rem);
 }
-.loader.hidden + .ghost-fog {
+.loader.hidden + .ghost_fog {
   opacity: 1;
 }
 
@@ -113,7 +112,7 @@
   #ghost{
     display: none;
    }
-  .ghost-fog{
+  .ghost_fog{
     display: none;
   }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 
-import Header from './components/header/header.js'
-import Main from "./components/main/main.js"
+import Header from './components/container/header/header.js'
+import Main from "./components/container/main/main.js"
 
 import {
   switchMenu,
@@ -13,7 +13,7 @@ import {
 } from './js/seusModulos.js'
 
 import './css/App.css'
-import Footer from "./components/footer/Footer.js"
+import Footer from "./components/container/footer/Footer.js"
 
 function App() {
   useEffect(() => {

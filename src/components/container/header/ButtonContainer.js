@@ -7,7 +7,7 @@ function ButtonContainer({ menuOpen, pages, currentPage }) {
             className={`space-around ${menuOpen ? "show" : "hide"}`}
             style={{
                 transition: "all 2s ease-in-out",
-                maxHeight: menuOpen ? "500px" : "0",
+                maxHeight: menuOpen ? "500px" : "50px",
                 overflow: "hidden"
             }}
         >
