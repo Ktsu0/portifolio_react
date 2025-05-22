@@ -57,28 +57,46 @@ export default function startBreakout(canvas, onGameOver) {
     }
 
     function drawBricks() {
-        for (let c = 0; c < brickColumnCount; c++) {
-            for (let r = 0; r < brickRowCount; r++) {
-                if (bricks[c][r].status === 1) {
-                    const brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
-                    const brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
-                    bricks[c][r].x = brickX;
-                    bricks[c][r].y = brickY;
+  for (let c = 0; c < brickColumnCount; c++) {
+    for (let r = 0; r < brickRowCount; r++) {
+      if (bricks[c][r].status === 1) {
+        const brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
+        const brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
 
-                    ctx.beginPath();
-                    ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                    ctx.fillStyle = bricks[c][r].color;
-                    ctx.fill();
+        const color = bricks[c][r].color;
+        ctx.beginPath();
+        ctx.rect(brickX, brickY, brickWidth, brickHeight);
+        ctx.fillStyle = color;
+        ctx.fill();
+        ctx.closePath();
 
-                    ctx.lineWidth = 2;
-                    ctx.strokeStyle = "#222";
-                    ctx.stroke();
+        // Efeito 3D pixelado (luz e sombra)
+        const lightColor = "#ffffff33"; // branco com transparência
+        const shadowColor = "#00000066"; // preto com mais opacidade
 
-                    ctx.closePath();
-                }
-            }
-        }
+        ctx.lineWidth = 1;
+
+        // Luz (topo e esquerda)
+        ctx.strokeStyle = lightColor;
+        ctx.beginPath();
+        ctx.moveTo(brickX, brickY + brickHeight);           // esquerda baixo
+        ctx.lineTo(brickX, brickY);                         // esquerda cima
+        ctx.lineTo(brickX + brickWidth, brickY);            // topo direita
+        ctx.stroke();
+
+        // Sombra (direita e base)
+        ctx.strokeStyle = shadowColor;
+        ctx.beginPath();
+        ctx.moveTo(brickX + brickWidth, brickY);            // direita topo
+        ctx.lineTo(brickX + brickWidth, brickY + brickHeight); // direita baixo
+        ctx.lineTo(brickX, brickY + brickHeight);           // base esquerda
+        ctx.stroke();
+      }
     }
+  }
+}
 
     function drawScore() {
         ctx.font = "12px 'Press Start 2P', monospace";
