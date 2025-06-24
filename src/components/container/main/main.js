@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import MainText from "../../ui/main/MainText";
 import BreakoutCanvas from "./../../../game/breakoutCanvas";
 
