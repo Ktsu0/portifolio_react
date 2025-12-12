@@ -188,3 +188,51 @@ main {
     font-size: 7vw;
   }
 }
+
+.button_container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn_primary, .btn_secondary {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--fontP), sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn_primary {
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn_primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+.btn_secondary {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn_secondary:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transform: translateY(-2px);
+}
+
+/* Responsividade para botões */
+@media (max-width: 900px) {
+    .button_container {
+        justify-content: center;
+    }
+}

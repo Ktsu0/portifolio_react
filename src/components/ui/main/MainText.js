@@ -4,20 +4,15 @@ function MainText() {
             <h1 id="name" className="text_effect">Gabriel</h1>
             <h2 id="last_name" className="text_effect">Wagner</h2>
             <p className="text_info">
-                Sou um estudante apaixonado por programação e design, sempre buscando
-                aprender novas tecnologias e ferramentas.
-
-                Tenho experiência em desenvolvimento front-end, com foco em criar interfaces
-                intuitivas e responsivas. Minha abordagem é sempre centrada no usuário,
-                visando uma experiência única e eficiente.
-
-                Gosto de trabalhar em projetos desafiadores que me permitam crescer tanto
-                profissionalmente quanto pessoalmente.
-
-                Com um olhar atento aos detalhes, busco entregar soluções criativas e
-                funcionais. Estou empolgado para fazer parte de novos projetos e contribuir
-                com meu conhecimento.
+                Sou um Desenvolvedor Front-end especializado em criar experiências digitais intuitivas e 
+                de alto impacto. Com sólida base em design e programação, transformo conceitos complexos 
+                em interfaces elegantes e funcionais. Comprometido com a excelência técnica e a inovação 
+                contínua, busco sempre superar expectativas e entregar soluções que agregam valor real.
             </p>
+            <div className="button_container">
+                 <button className="btn_primary" onClick={() => window.open('https://github.com/seu-github?tab=repositories', '_blank')}>PROJETOS</button>
+                 <button className="btn_secondary" onClick={() => window.open('https://www.linkedin.com/in/seu-linkedin/', '_blank')}>FORMAÇÕES</button>
+            </div>
         </div>
     </>
 }

@@ -3,12 +3,12 @@ export default function startBreakout(canvas, onGameOver) {
 
     let x = canvas.width / 2;
     let y = canvas.height - 30;
-    let dx = 2;
-    let dy = -2;
+    let dx = 4;
+    let dy = -4;
     const ballRadius = 5;
 
     const paddleHeight = 6;
-    const paddleWidth = 50;
+    const paddleWidth = 75;
     let paddleX = (canvas.width - paddleWidth) / 2;
 
     const brickRowCount = 5;
